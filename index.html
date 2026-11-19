@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GIF Gala - RSVP</title>
+
+    <!-- Connect the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main invitation container -->
+    <div class="invitation-container">
+
+        <!-- Invitation header -->
+        <header>
+            <h1>You're Invited to the GIF Gala: Where Memes Come to Life!</h1>
+            <h2>7/21/23</h2>
+        </header>
+
+        <!-- Event description -->
+        <section class="event-description">
+            <p>
+                Get ready for an unforgettable night of laughter,
+                creativity, and internet culture! At the GIF Gala,
+                guests dress up as their favorite GIFs or memes.
+                Show off your funniest outfit, enjoy the celebration,
+                and bring your favorite internet moments to life!
+            </p>
+        </section>
+
+        <!-- RSVP form -->
+        <section class="rsvp-section">
+
+            <h2>RSVP Now!</h2>
+
+            <form id="rsvpForm">
+
+                <!-- Email field -->
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <!-- Attendance field -->
+                <label for="attendance">Will you attend?</label>
+                <select id="attendance" name="attendance" required>
+                    <option value="">Select an option</option>
+                    <option value="Yes">Yes, I'll be there!</option>
+                    <option value="No">Sorry, I can't attend</option>
+                </select>
+
+                <!-- Submit button -->
+                <button type="submit">Submit RSVP</button>
+
+            </form>
+
+            <!-- Confirmation message area -->
+            <div id="confirmationMessage"></div>
+
+        </section>
+
+    </div>
+
+    <!-- Connect the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

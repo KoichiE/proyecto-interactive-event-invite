@@ -1,0 +1,151 @@
+
+/* General page styling */
+body {
+    margin: 0; /* Removes default page margins */
+    padding: 20px; /* Adds space around the page */
+    font-family: Arial, sans-serif; /* Sets a clean font */
+    background: linear-gradient(135deg, #7b2ff7, #f107a3); /* Creates a colorful gradient background */
+    color: #333333; /* Sets the main text color */
+    min-height: 100vh; /* Makes the background cover the screen */
+    box-sizing: border-box; /* Includes padding in the page dimensions */
+}
+
+/* Main invitation container */
+.invitation-container {
+    background-color: #ffffff; /* Creates a white container */
+    max-width: 600px; /* Limits the container width */
+    margin: 40px auto; /* Centers the invitation */
+    padding: 35px; /* Adds internal spacing */
+    border-radius: 20px; /* Rounds the container corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    box-sizing: border-box; /* Includes padding in the container width */
+}
+
+/* Invitation heading */
+header {
+    text-align: center; /* Centers the heading */
+    padding-bottom: 20px; /* Adds space below the header */
+}
+
+/* Main title */
+header h1 {
+    color: #7b2ff7; /* Sets a vibrant purple color */
+    font-size: 32px; /* Sets the title size */
+    margin-bottom: 15px; /* Adds space below the title */
+    line-height: 1.3; /* Improves heading readability */
+}
+
+/* Event date */
+header h2 {
+    color: #f107a3; /* Sets a bright pink color */
+    font-size: 24px; /* Sets the date size */
+    margin-top: 10px; /* Adds space above the date */
+}
+
+/* Event description */
+.event-description {
+    background-color: #f8efff; /* Adds a light purple background */
+    padding: 20px; /* Adds internal spacing */
+    border-radius: 12px; /* Rounds the description box */
+    margin-bottom: 25px; /* Adds space below the description */
+}
+
+/* Description paragraph */
+.event-description p {
+    font-size: 16px; /* Sets paragraph text size */
+    line-height: 1.7; /* Improves readability */
+    color: #444444; /* Sets dark gray text */
+}
+
+/* RSVP section */
+.rsvp-section {
+    text-align: left; /* Aligns the form to the left */
+}
+
+/* RSVP heading */
+.rsvp-section h2 {
+    color: #7b2ff7; /* Sets the heading purple */
+    font-size: 25px; /* Sets the heading size */
+    text-align: center; /* Centers the RSVP heading */
+    margin-bottom: 20px; /* Adds space below heading */
+}
+
+/* Form labels */
+label {
+    display: block; /* Places labels on separate lines */
+    font-weight: bold; /* Makes labels bold */
+    margin-bottom: 8px; /* Adds space below labels */
+    color: #444444; /* Sets label text color */
+}
+
+/* Email and attendance fields */
+input,
+select {
+    width: 100%; /* Makes fields fill the available width */
+    padding: 13px; /* Adds internal spacing */
+    margin-bottom: 20px; /* Adds space below each field */
+    border: 1px solid #cccccc; /* Adds a light gray border */
+    border-radius: 8px; /* Rounds field corners */
+    font-size: 15px; /* Sets input text size */
+    box-sizing: border-box; /* Prevents fields from overflowing */
+}
+
+/* Input focus effect */
+input:focus,
+select:focus {
+    outline: none; /* Removes the default outline */
+    border-color: #7b2ff7; /* Highlights the field in purple */
+}
+
+/* Submit button */
+button {
+    width: 100%; /* Makes button fill the form width */
+    padding: 15px; /* Adds internal button spacing */
+    background-color: #7b2ff7; /* Sets purple button background */
+    color: #ffffff; /* Makes button text white */
+    border: none; /* Removes the default border */
+    border-radius: 10px; /* Rounds button corners */
+    font-size: 17px; /* Sets button text size */
+    font-weight: bold; /* Makes button text bold */
+    cursor: pointer; /* Shows pointer when hovering */
+    transition: background-color 0.3s ease; /* Smooths color changes */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #f107a3; /* Changes button to pink */
+}
+
+/* Confirmation message */
+#confirmationMessage {
+    display: none; /* Hides the message initially */
+    background-color: #e9fff0; /* Adds a light green background */
+    color: #176b36; /* Sets dark green text */
+    padding: 15px; /* Adds internal spacing */
+    margin-top: 20px; /* Adds space above the message */
+    border-radius: 10px; /* Rounds message corners */
+    text-align: center; /* Centers the confirmation text */
+    font-weight: bold; /* Makes the message bold */
+    line-height: 1.5; /* Improves message readability */
+}
+
+/* Mobile screen adjustments */
+@media screen and (max-width: 600px) {
+
+    .invitation-container {
+        padding: 22px; /* Reduces container spacing */
+        margin: 15px auto; /* Reduces outside spacing */
+    }
+
+    header h1 {
+        font-size: 25px; /* Makes the title smaller */
+    }
+
+    header h2 {
+        font-size: 21px; /* Reduces date size */
+    }
+
+    .event-description p {
+        font-size: 14px; /* Reduces paragraph size */
+    }
+}
